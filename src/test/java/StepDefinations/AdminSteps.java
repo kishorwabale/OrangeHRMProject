@@ -44,7 +44,7 @@ public class AdminSteps{
         loginPageObj.enterUsername(usernameVariable);
         loginPageObj.enterPassword(passwordVariable);
         loginPageObj.clickOnLoginbtn();
-
+        System.out.println("Updated framework");
     }
 
     @When("user navigate to admin section")
