@@ -39,12 +39,12 @@ public class AdminSteps{
         String usernameVariable = prop.getProperty("usernameKey");
         String passwordVariable = prop.getProperty("passwordKey");
 
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
 
         loginPageObj.enterUsername(usernameVariable);
         loginPageObj.enterPassword(passwordVariable);
         loginPageObj.clickOnLoginbtn();
-        System.out.println("Updated framework");
+        System.out.println("===Updated framework===");
     }
 
     @When("user navigate to admin section")
@@ -65,15 +65,15 @@ public class AdminSteps{
         String empName= (String) jsonObject.get("empname");
 
 
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         viewSystemUserObj.enterusername(nickname);
-         Thread.sleep(2000);
+         //Thread.sleep(2000);
         viewSystemUserObj.selectuserroll(admin);
-        Thread.sleep(3000);
+       // Thread.sleep(3000);
         viewSystemUserObj.enteremployeename(empName);
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         viewSystemUserObj.selectuserstatus();
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         viewSystemUserObj.entersearchbutton();
     }
 

@@ -24,7 +24,8 @@ public class LoginPage extends BaseUtility {
     private WebElement LoginBtn;
 
     public void enterUsername(String username){
-        Uname.sendKeys(username);
+        //Uname.sendKeys(username);
+        waitClearEnterText(Uname,username);
     }
 
     public void enterPassword(String password){
